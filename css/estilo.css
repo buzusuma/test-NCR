@@ -1,0 +1,86 @@
+
+/*[class*="col-"]{
+	float:left;
+	//border:1px solid black;
+	padding:10px;
+}*/
+
+.contenedor{
+	position:relative;
+	margin:auto;
+	width:100%;
+	height: auto;
+	background-image: url('img/verde.jpg');
+}
+
+.subtitulo{
+	font-weight: 700;
+	font-size:10px;
+text-align: center;
+}
+
+.border {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        padding: 0 4px 0 4px;
+        text-align: center;
+        color: #98ed2a;
+	font-weight: bold;
+
+     }
+
+table th {
+  text-align: center;
+  color: #444242;
+  font-weight: bold;
+  padding-top: 10%;
+}
+
+table tr {
+  text-align: center;
+}
+
+table td {
+  width: 70px;
+}
+
+table td.white{
+	color: white;
+	font-weight: bold;
+}
+table {
+	background-image: url('verde.jpg');
+}
+
+.header {
+	padding:20px 10px;
+	background-color:#444242;
+	color: #98ed2a;
+	text-align: center;
+}
+
+.button-send {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 4px 0 4px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    background: #85d123;
+    padding: 5px 10px;
+}
+
+.dollar{
+   font-size:24px; 
+   color: #444242;
+}
+
+.pd-top{
+   padding-top: 15px;
+}
+
+.pd-bottom{
+   padding-bottom: 15px;
+}

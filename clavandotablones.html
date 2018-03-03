@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>2.1 Clavando Tablones</title>
+
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		
+	var A = [1, 4, 5, 8],
+		B = [4, 5, 9, 10],
+		C = [4, 6, 7, 10, 2];
+
+		/* Camabiando el valor 6 del array C por 4 como ejemplo se puede observar que el siste ma devolverá 4 clavos como el ejemplo lo indica.
+		   Mientras las condiciones no se cumplen y el sistema devolvera -1*/
+
+	var i = 0,
+		contador = 0;
+
+		document.write("Para los tablones");
+	while (i<A.length){
+		document.write("["+A[i]+","+B[i]+"] ");
+		if (A[i]<=C[i] && C[i]<=B[i]){
+			contador = contador+1;
+		}
+		else {
+			contador = -1;
+			break;
+		}
+
+		i++;
+	}
+
+	if (contador<0){
+		alert("No se cumple la funcion por ende existen "+contador+" clavos");
+	}
+	else{
+		document.write("Existen "+contador+" clavos de manera secuencial");
+	}
+	
+	//Test realizado por JMT
+	</script>
+</body>
+
+</html>

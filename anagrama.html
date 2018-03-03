@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>2.1 Anagramas</title>
+
+</head>
+
+<body>
+
+	<div id="main">
+
+		Introduzca valor de la cadena
+		<input type="text" id="cadena">
+		<br>
+		Introduzca palabra a buscar
+		<input type="text" id="busqueda">
+		<br>
+		<button onclick="myFunction()">Buscar anagrama</button>
+		
+	</div>
+
+	
+	<script type="text/javascript">
+		
+
+function myFunction() {
+    var x = document.getElementById("cadena");
+    x.value = x.value.toUpperCase();
+    var y = document.getElementById("busqueda");
+    y.value = y.value.toUpperCase();
+
+
+    var cadena = x.value;
+    var busqueda = y.value;
+	var i = 0;
+	var contador = 0;
+
+		while (i != -1)
+		{
+		var i = cadena.indexOf(busqueda,i);
+		if (i != -1)
+		{
+		i++;
+		contador++;
+		}
+		}
+		document.write("Número de coincidencias encontradas "+contador+" veces");
+}
+
+//Test realizado por JMT
+	</script>
+</body>
+
+</html>
